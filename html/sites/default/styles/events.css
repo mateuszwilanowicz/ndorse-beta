@@ -1,0 +1,32 @@
+table.calendar {
+	width: 100%;
+	border-collapse: collapse;
+}
+table.calendar td {
+	border: 1px solid #CCC;
+	width: 14%;
+	padding: 5px;
+	vertical-align: top;
+	height: 70px;
+}
+table.calendar td.other-month {
+	background-color: #EEE;
+}
+
+/* event */
+table.calendar a {
+	border: 1px solid #003;
+	padding: 2px;
+	display: block;
+	margin-bottom: 3px;
+}
+table.calendar a.admin {
+	border: 2px solid #17d6c6;
+}
+table.calendar a.premium {
+	border: 2px solid #a79552;
+}
+
+.calendar-buttons {
+	margin-top: 20px;
+}

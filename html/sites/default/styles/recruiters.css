@@ -1,0 +1,18 @@
+input[type="text"] {
+	vertical-align: middle;
+}
+input[type="text"], textarea {
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	padding: 5px;
+	width: 245px;
+}
+form p {
+	margin: 0;
+	padding: 10px;
+	border-bottom: 1px solid #EEE;
+}
+form p.form-last {
+	border-bottom: none;
+}

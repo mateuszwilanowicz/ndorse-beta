@@ -1,0 +1,83 @@
+/* upgrades */
+table.upgrade-options {
+	border-collapse: collapse;
+	width: 100%;
+}
+table.upgrade-options td, table.upgrade-options th {
+	border: 1px solid #CCC;
+	padding: 3px;
+	text-align: left;
+}
+table.upgrade-options tr.upgrade-prices td {
+	border: 0;
+}
+
+/* contact options */
+table.contact-options {
+	width: 100%;
+	border-collapse: collapse;
+}
+table.contact-options th, table.contact-options td {
+	border-left: 1px solid #CCC;
+	padding: 3px 10px;
+	text-align: center;
+	border-top: 1px solid #CCC;
+	width: 65px;
+}
+table.contact-options th {
+	cursor: help;
+}
+table.contact-options tr:first-child th,table.contact-options tr:first-child td {
+	border-top: none;
+} 
+table.contact-options th:first-child, table.contact-options td:first-child {
+	border-left: none;
+}
+table.contact-options tr.contact-permission-labels th {
+	border-top: none;
+	vertical-align: bottom;
+}
+table.contact-options th.contact-message-type {
+	text-align: right;
+	padding-right: 10px;
+	width: 135px;
+}
+
+/* profile page controls */
+.profile-avatar-box img {
+	display: block;
+	width: 244px;
+	margin: 0 auto;
+	border: 1px solid #000;
+	margin-bottom: 15px;
+}
+.profile-avatar-box label {
+	width: auto;
+	text-align: left;
+}
+.profile-avatar-box a.button {
+	margin-left: 6px;
+}
+#details_form .profile-form-name, #experience_form #jobTitle, #experience_form #companyName,
+#job_startDate, #job_endDate, #coursename, #institution, #edu_startDate, #edu_endDate {
+	width: 150px;
+}
+#address2, #confirm_password {
+	margin-left: 163px;
+}
+#experience_form label, #education_form label {
+	width: auto;'
+}
+.middle-label {
+	margin: 0 10px;
+}
+#job_description, #edu_description, #job_skills, #edu_skills {
+	width: 350px;
+}
+#experience_form .skills-label, #experience_form .description-label,
+#education_form .skills-label, #education_form .description-label {
+	width: 100px;	
+}
+.edit-button-right {
+	float: right;
+}

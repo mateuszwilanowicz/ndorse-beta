@@ -1,0 +1,17 @@
+.admin-stats {
+	width: 100%;
+}
+.admin-stats th, .admin-stats td {
+	width: 20%;
+	text-align: center;
+}
+.admin-stats td {
+	font-size: 20px;
+}
+.admin-stats th:first-child {
+	text-align: left;
+}
+
+span.formElement label {
+	width: 150px;
+}

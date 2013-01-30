@@ -1,0 +1,39 @@
+span.message-icon {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url(../images/mail-icon.png) no-repeat;
+	margin: 3px 0;
+}
+tr.unread span.message-icon {
+	background-position: 100% 0;
+}
+tr.unread td {
+	background-color: #cedee0;
+}
+tr.unread td a {
+	color: #000;
+}
+
+.inbox_col_1 {
+	width: 25px;
+}
+.inbox_col_2 {
+	width: 120px;	
+}
+.inbox_col_3 {
+	width: 200px;
+}
+
+nput#subject {
+	width: 500px;
+}
+textarea#message {
+	width: 920px;
+	height: 300px;
+}
+
+.message-options {
+	margin-bottom: -25px;
+	text-align: right;
+}

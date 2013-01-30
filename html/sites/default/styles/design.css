@@ -1,0 +1,516 @@
+html, body {
+	min-width: 960px;
+	margin: 0;
+	padding: 0;	
+}
+
+body {
+	background: #FFF url(../images/bg_main.png) 0 187px repeat-x;
+	font-family: Cabin, "Trebuchet MS", Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	line-height: 20px;
+}
+a {
+	text-decoration: none;
+	color: #185B6E;
+	font-weight: 600;
+}
+
+/* headings */
+h1, h2, h3, h4 {
+	margin: 0;
+	color: #13142C;
+	font-weight: 600;
+}
+h2 {
+	font-size: 30px;
+	font-weight: 700;
+	border-bottom: 1px solid #000;
+	margin-bottom: 15px;
+	line-height: 36px;
+}
+h3 {
+	font-size: 20px;
+	margin-bottom: 10px;
+	line-height: 28px;
+}
+div.box+h3 {
+	margin-top: 30px;
+	margin-bottom: -20px;
+}
+h4 {
+	font-size: 16px;
+	margin-bottom: 5px;
+	line-height: 22px;
+}
+
+/* account bar */
+div.account {
+	background-color: #000;
+	border-bottom: 1px solid #666;
+	color: #FFF;
+	height: 20px;
+	padding-top: 5px;
+	text-align: right;
+	font-size: 12px;
+}
+div.account a {
+	color: #FFF;
+	border-bottom: 1px solid #CCC;
+}
+span.account-user-name, span.account-login {
+	border-right: 1px solid #FFF;
+	padding-right: 10px;
+	margin-right: 10px;
+	display: inline-block;
+}
+span.account-messages {
+	background: url(../images/icon_message_bw.png) 0 50% no-repeat;
+	padding-left: 20px;
+}
+
+/* header block */
+div.header {
+	background: #13142c url(../images/bg_header.jpg) 50% 0 no-repeat;
+	height: 110px;
+}
+div.header h1 {
+	height: 90px;
+	padding-top: 20px;
+}
+div.header h1 span.alt {
+	margin-left: -9999px;
+}
+
+/* footer block */
+div.footer {
+	background: #e5e5e5;
+	height: 215px;
+}
+div.footer div.content {
+	position: relative;
+}
+img.footlogo {
+	position: absolute;
+	right: 0;
+	top: 35px;
+}
+div.footer-nav {
+	background: url(../images/bg_footer_nav.png) repeat-x;
+	height: 34px;
+	padding-top: 10px;
+	width: 100%;
+	vertical-align: middle;
+}
+div.footer-nav ul {
+	padding: 0;
+	margin: 2px 0 0;
+	list-style-type: none;
+}
+div.footer-nav ul li {
+	display: inline-block;
+	border-left: 1px solid #3f3f3f;
+	margin-left: 10px;
+	padding-left: 10px;
+}
+div.footer-nav ul li:first-child {
+	border-left: 0;
+	padding-left: 0;
+	margin-left: 0;
+}
+div.footer-nav a {
+	color: #3f3f3f;
+}
+div.footer-copyright {
+	width: 100%;
+	border-top: 1px solid #c3c3c3;
+	border-bottom: 1px solid #c3c3c3;
+	line-height: 38px;
+	text-align: right;
+	margin-top: 135px;
+	background: #e5e5e5;
+	font-size: 90%;
+}
+div.footer-copyright a {
+	color: #000;
+}
+div.footer-social {
+	float: right;
+	margin-top: -5px;
+	font-size: 90%;
+}
+div.footer-social span {
+	display: inline-block;
+	height: 30px;
+	width: 30px;
+	vertical-align: middle;
+	background: url(../images/btn_social.png) no-repeat;
+}
+div.footer-social span.footer-social-twitter {
+	background-position: 100% 0;
+}
+
+/* navigation */
+div.navigation {
+	background: url(../images/bg_menu.png) repeat-x;
+	font-size: 14px;
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+	font-family: "Cabin Semi Bold", Cabin, sans-serif;	
+}
+div.navigation a, span.menu-start, span.menu-end {
+	color: #3F3F3F;
+	display: inline-block;
+	border-left: 1px solid #FFF;
+	border-right: 1px solid #C4C4C4;
+	padding: 10px 15px 15px;
+	height: 16px;
+	vertical-align: middle;
+	font-weight: 600;
+}
+span.menu-start, span.menu-end {
+	width: 1px;	
+}
+span.menu-start {
+	border-left: none;
+}
+span.menu-end {
+	border-right: none;
+}
+
+/* page content */
+div.content {
+	width: 960px;
+	margin: 0 auto;
+}
+div.page {
+	padding-bottom: 30px;
+	border-bottom: 1px solid #003;
+	margin-bottom: 30px;
+	min-height: 600px;
+}
+div.clearer {
+	clear: both;
+}
+
+/* page messages */
+div.page-message {
+	border: 1px solid #b9bcbe;
+	height: 16px;
+	vertical-align: middle;
+	text-align: center;
+	padding: 10px 0;
+	background: url(../images/bg_info.png) repeat-x;
+	margin-bottom: 20px;
+}
+div.page-error {
+	background: url(../images/bg_error.png) repeat-x;
+}
+
+/* boxes */
+div.box {
+	border: 1px solid #bcbfc1;
+	margin-top: 30px;
+	background-color: #FFF;
+	padding: 20px 15px;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	box-shadow: 2px 2px 2px #CCC;
+}
+div.box h3 {
+	background-color: #5a5c6d;
+	color: #FFF;
+	font-size: 16px;
+	height: 33px;
+	line-height: 33px;
+	padding-left: 10px;
+	margin: -20px -15px 15px;
+	border-radius: 6px 6px 0 0;
+	-moz-border-radius: 6px 6px 0 0;
+	-webkit-border-radius: 6px 6px 0 0;
+	background-image: -ms-linear-gradient(bottom, #2C2D36 0%, #5A5C6D 100%);
+	background-image: -moz-linear-gradient(bottom, #2C2D36 0%, #5A5C6D 100%);
+	background-image: -o-linear-gradient(bottom, #2C2D36 0%, #5A5C6D 100%);
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #2C2D36), color-stop(1, #5A5C6D));
+	background-image: -webkit-linear-gradient(bottom, #2C2D36 0%, #5A5C6D 100%);
+	background-image: linear-gradient(to top, #2C2D36 0%, #5A5C6D 100%);
+}
+
+/* columns */
+div.col {
+	margin-left: 30px;
+	float: left;
+	width: 465px;
+}
+/* single column width */
+div.col1 {
+	width: 290px;
+}
+div.col1 div.box {
+	width: 260px;
+}
+/* double column width */
+div.col2 {
+	width: 640px;
+}
+div.col2 div.box {
+	width: 610px;
+}
+div.col2 div.box div.box {
+	width: 578px;
+}
+
+div.left-box, div.left-col {
+	margin-left: 0;
+}
+div.top-box {
+	margin-top: 0;
+}
+
+/* buttons */
+button {
+	font-family: Cabin, "Trebuchet MS", Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: 600;
+}
+button, a.button {
+	background: url(../images/btn_std.png) no-repeat;
+	height: 30px;
+	padding: 0 0 0 10px;
+	color: #FFF;
+	display: inline-block;
+	margin: 5px 5px 5px 0;
+	border: 0;
+	cursor: pointer;
+}
+button span, a.button span {
+	background: url(../images/btn_std_arrow.png) 100% 0 no-repeat;
+	display: inline-block;
+	line-height: 30px;
+	padding-right: 25px;
+}
+button[type="submit"], a.default-button {
+	background: url(../images/btn_default.png) no-repeat;
+}
+button[type="submit"] span, a.default-button span {
+	background: url(../images/btn_default_arrow.png) 100% 0 no-repeat;
+}
+button:hover, a.button:hover {
+	background-position: 0 100%;
+}
+button:hover span, a.button:hover span {
+	background-position: 100% 100%;
+}
+
+/* tables */
+table.tablecontrol {
+	width: 100%;
+	border-collapse: collapse;
+}
+table.tablecontrol th {
+	text-align: left;
+	border-bottom: 1px solid #000;
+}
+.tablecontrol tr td {
+	border-bottom: 1px solid #CCC;
+	height: 30px;
+}
+
+
+/* forms */
+span.formElement, span.radioElement {
+	display: block;
+	margin: 3px 0;
+}
+span.formElement label, label {
+	display: inline-block;
+	width: 150px;
+	text-align: right;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+label.required {
+	font-weight: bold;
+}
+div.overlay span.formElement label, #recommend_form label {
+	width: auto;
+	margin-top: 10px;
+	display: block;
+}
+span.rightLabel label {
+	width: auto;
+}
+div.overlay span.formElement span.radioElement label, #recommend_form span.formElement span.radioElement label {
+	margin-top: 3px;
+	display: inline-block;
+}
+div.buttonbar {
+	display: block;
+	padding: 10px 0 0;
+	border-top: 1px solid #AAA;
+	margin-top: 20px;
+}
+input[type="text"], input[type="password"], input[type="date"], textarea, select {
+	border: 1px solid #202d33;
+	padding: 3px;
+	width: 200px;
+	vertical-align: top;
+}
+textarea {
+	height: 120px;
+}
+fieldset {
+	display: block;
+	margin: 10px;
+}
+input[type="radio"], input[type="checkbox"] {
+	vertical-align: middle;
+}
+
+/* tabs (to be restyled) */
+div.section-nav {
+	border-bottom: 1px solid #808080;
+	height: 29px;
+}
+div.section-nav a.tab {
+	display: inline-block;
+	width: 90px;
+	height: 24px;
+	background: url(../images/tabs.png) no-repeat;
+	color: #185B6E;
+	padding: 3px 5px;
+	text-align: center;
+}
+div.section-nav a.tab.on, div.section-nav a.tab.on:hover {
+	background-position: 0 -30px;
+	color: #000;
+}
+div.section-nav a.tab:hover {
+	background-position: 0 -60px;
+	color: #000;
+}
+div.tab-content {
+	border-left: 1px solid #808080;
+	border-right: 1px solid #808080;
+	border-bottom: 1px solid #808080;
+	padding: 20px;
+}
+
+/* pagination */
+div.pagingControl {
+	margin: 20px 0;
+	width: 100%;
+	text-align: right;
+}
+.pagingControl span {
+	display: inline-block;
+	width: 26px;
+	height: 30px;
+	background: url(../images/btn_pages.png) no-repeat;
+	vertical-align: -9px;
+}
+.pagingControl span.prevButton {
+	background-position: -26px 0;
+}
+.pagingControl span.nextButton {
+	background-position: -52px 0;
+}
+.pagingControl span.lastButton {
+	background-position: -78px 0;
+}
+.pagingControl span.firstButton:hover {
+	background-position: 0 -30px;
+} 
+.pagingControl span.prevButton:hover {
+	background-position: -26px -30px;
+}
+.pagingControl span.nextButton:hover {
+	background-position: -52px -30px;
+}
+.pagingControl span.lastButton:hover {
+	background-position: -78px -30px;
+}
+.pagingControl span.firstButton.disabled, .pagingControl span.firstButton.disabled:hover {
+	background-position: 0 -60px;
+} 
+.pagingControl span.prevButton.disabled, .pagingControl span.prevButton.disabled:hover {
+	background-position: -26px -60px;
+}
+.pagingControl span.nextButton.disabled, .pagingControl span.nextButton.disabled:hover {
+	background-position: -52px -60px;
+}
+.pagingControl span.lastButton.disabled, .pagingControl span.lastButton.disabled:hover {
+	background-position: -78px -60px;
+}
+h2 .pagingControl {
+	float: right;
+	margin-top: -42px;
+}
+#pageselector {
+	width: 7em;
+}
+
+/* autocompleter */
+div.autocomplete {
+	width: 200px;
+	border: 1px solid #000;
+	position: absolute;
+	background: #FFF;
+}
+div.autocomplete a {
+	display: block;
+	border-top: 1px dotted #CCC;
+	padding: 2px;
+}
+div.autocomplete a:first-child {
+	border-top: none;
+}
+div.autocomplete a:hover {
+	background: #6de2d8;
+}
+
+/* overlays */
+.overlay {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	background: #FFF;
+	border: 1px solid #000;
+	padding: 20px 30px 10px;
+}
+
+/* recommendation overlay */
+div.recommend {
+	width: 400px;
+	height: 200px;
+	margin-left: -200px;
+	margin-top: -100px;
+}
+.recommend-overlay {
+	width: 350px;
+	height: 250px;
+	margin-left: -175px;
+	margin-top: -125px;
+}
+#form_recommend {
+	position: relative;
+}
+#form_recommend div.autocomplete {
+	position: absolute;
+	left: 105px;
+	margin-top: -10px;
+	background: #FFF;
+}
+div.request-item {
+	border-bottom: 1px solid #CCC;
+	margin-bottom: 10px;
+}
+
+/* graph styles */
+.graph {
+	border: 1px solid #bcbfc1;
+	display: box;
+	width: 610px;
+	height: 250px;
+}

@@ -1,0 +1,55 @@
+AddDefaultCharset UTF-8
+
+RewriteEngine On
+RewriteBase /
+
+# RewriteCond %{HTTP_HOST} ^domain.co.uk [NC]
+# RewriteRule ^(.*)$ http://www.domain.co.uk/$1 [L,R=301]
+
+RewriteCond %{REQUEST_URI} dbimages/(.*)\.(jpg|png)$
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ /image/ [L]
+
+#do the rule only if the address has no extension:
+RewriteCond %{REQUEST_URI} !\.[[:alnum:]]+$
+#redirect /whatever to /whatever/, not apply to whatever/!
+RewriteRule ^(.+[^/])$ /$1/ [R=301,L]
+
+# Invoke the handler for missing images, language
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteRule ^([a-zA-Z][a-zA-Z])/(.*)images/(.*)$ /router.php?language=$1&controller=image&%{QUERY_STRING} [L]
+
+# Invoke the handler for missing images, no language
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule images/(.*)$ /router.php?controller=image&%{QUERY_STRING} [L]
+
+# language only
+#RewriteRule ^([a-zA-Z][a-zA-Z])/$ router.php?language=$1&controller=index&%{QUERY_STRING} [L]
+
+# no language
+RewriteRule ^$ router.php?controller=index&%{QUERY_STRING} [L]
+
+# language and controller (top level directory)
+#RewriteCond %{REQUEST_URI} !\.[[:alnum:]]+$
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteRule ^([a-zA-Z][a-zA-Z])/([a-zA-Z0-9\-_]+)/$ router.php?language=$1&controller=$2&%{QUERY_STRING} [L]
+
+# no language and controller (top level directory)
+RewriteCond %{REQUEST_URI} !\.[[:alnum:]]+$
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([a-zA-Z0-9\-_]+)/$ router.php?controller=$1&%{QUERY_STRING} [L]
+
+# language, controller, page and extra stuff (args or subdirectories)
+#RewriteCond %{REQUEST_URI} !\.[[:alnum:]]+$
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteRule ^([a-zA-Z][a-zA-Z])/([a-zA-Z0-9\-_]+)/([^/]*)(.*)/$ router.php?language=$1&controller=$2&page=$3&%{QUERY_STRING} [L]
+
+# no language, controller, page and extra stuff (args or subdirectories)
+RewriteCond %{REQUEST_URI} !\.[[:alnum:]]+$
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([a-zA-Z0-9\-_]+)/([^/]*)(.*)/$ router.php?controller=$1&page=$2&%{QUERY_STRING} [L]
+

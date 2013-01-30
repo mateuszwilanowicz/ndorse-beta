@@ -1,0 +1,38 @@
+input[type="text"] {
+	vertical-align: middle;
+}
+input[type="text"], textarea {
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	padding: 5px;
+	width: 350px;
+}
+textarea.job-companydescription {
+	height: 80px;
+}
+
+form p {
+	margin: 0;
+	padding: 10px;
+	border-bottom: 1px solid #EEE;
+}
+form p.form-last {
+	border-bottom: none;
+}
+p.textfield textarea {
+	margin-bottom: 10px;
+}
+p.textfield label {
+	display: block;
+	margin: 5px 0 10px;
+}
+
+input.job-salary {
+	width: 5em;
+}
+
+span.form-note {
+	font-size: 12px;
+	color: #185b6e;
+}
